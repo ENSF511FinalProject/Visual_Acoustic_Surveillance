@@ -1,3 +1,4 @@
+## https://www.cnblogs.com/shenh/p/14267345.html
 from smtplib import SMTP_SSL
 from email.mime.text import MIMEText
 
@@ -11,8 +12,8 @@ def sendMail(message,Subject,sender_show,recipient_show,to_addrs,cc_show=''):
     :param cc_show: str show cc
     '''
     # sender's address and password
-    user = 'zt945625@gmail.com'
-    password = '123456789@gmail'
+    user = 'xxx@gmail.com'
+    password = 'xxx'
     
     # mail content
     msg = MIMEText(message, 'plain', _charset="utf-8")
@@ -46,6 +47,5 @@ if __name__ =='__main__':
     # appear recipient
     recipient_show = 'xxx'
     # to address
-    to_addrs = 'zt945625@gmail.com'
+    to_addrs = 'xxx.com'
     sendMail(message,Subject,sender_show,recipient_show,to_addrs)
-    
